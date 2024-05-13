@@ -1422,7 +1422,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .service-content { transition: var(--transition-timing); }
 
-.service-content:hover { margin-left: 15px; }
+/* .service-content:hover { margin-left: 15px; } */
 
 
 /*-------------------------------------
@@ -2352,6 +2352,73 @@ footer {
     */
 
     .slider-item:last-child .banner-img {object-position: top;}
+    
+    /**
+    * CATEGORY
+    */
+
+    .category-item {min-width: calc(25% - 22.5px);}
+
+    .category-item-title { --fs-9: 0.824rem; }
+
+     /**
+    * PRODUCT
+    */
+
+    .product-feature .showcase > div {min-width: calc(50% - 10px);}
+
+    .product-feature .display-number { --fs-5: 1.125rem;  }
+
+    .product-grid {grid-template-columns: repeat(4, 1fr);}
+
+    /**
+    * TESTIMONIALS, CTA, SERVICE
+    */
+
+    .testimonial, .service {
+        min-width: calc(25% - 20px);
+        width: calc(25% - 20px);
+    }
+
+    .cta-container {
+        min-width: calc(50% - 42px);
+        width: calc(50% - 20px);
+        aspect-ratio: unset;
+        min-height: 360px;
+        height: 360px;
+    }
+
+    .service-container {
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .service-item {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    /**
+    * BLOG
+    */
+
+    .blog { margin-bottom: 50px;}
+
+    .blog-card {min-width: calc(25% - 22.5px);}
+
+    /**
+    * FOORTE
+    */
+
+    footer {padding-top: 50px;}
+
+    .footer-category { 
+        padding-bottom: 35px;
+        margin-bottom: 50px;
+    }
+
+    .footer-nav { padding-bottom: 50px;}
 
 }
 
